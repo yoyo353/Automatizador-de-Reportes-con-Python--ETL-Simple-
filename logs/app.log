@@ -1,0 +1,13 @@
+2025-12-07 02:12:44,960 - Main - INFO - Starting ETL Pipeline...
+2025-12-07 02:12:44,970 - src.db.connector - INFO - Database connector initialized with URL: sqlite:///data/ventas.db
+2025-12-07 02:12:44,970 - src.etl.extractor - INFO - Extracting data from data/raw/ventas_sucias.csv
+2025-12-07 02:12:44,972 - src.etl.extractor - INFO - Extracted 6 rows.
+2025-12-07 02:12:44,972 - src.etl.transformer - INFO - Starting data transformation...
+2025-12-07 02:12:44,973 - src.etl.transformer - INFO - Dropped 2 rows with nulls.
+2025-12-07 02:12:44,976 - src.etl.transformer - WARNING - 1 rows have invalid dates and will be dropped.
+2025-12-07 02:12:44,977 - src.etl.transformer - INFO - Data transformation complete.
+2025-12-07 02:12:44,977 - src.etl.loader - INFO - Loading 3 rows into table 'ventas'...
+2025-12-07 02:12:44,987 - src.etl.loader - INFO - Data loaded successfully.
+2025-12-07 02:12:44,987 - src.reports.pdf_generator - INFO - Generating PDF report at reporte_ventas.pdf...
+2025-12-07 02:12:44,989 - src.reports.pdf_generator - INFO - PDF report generated successfully.
+2025-12-07 02:12:44,990 - Main - INFO - ETL Pipeline completed successfully.
